@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="catalog-page">
+        <section class="catalog-heading">
+            <p class="catalog-eyebrow">ACE STORE</p>
+            <h1>Техника для твоей жизни</h1>
+            <p>Выбирай гаджеты, которые делают каждый день удобнее.</p>
+        </section>
+
+        <!-- Поиск и фильтры -->
+        <section class="catalog-controls">
+            <input
+                type="search"
+                id="search_input"
+                placeholder="Найти товар..."
+                aria-label="Поиск товаров"
+            >
+
+            <select id="category_filter" aria-label="Категория">
+                <option value="all">Все категории</option>
+                <option value="phones">Телефоны</option>
+                <option value="headphones">Наушники</option>
+                <option value="computers">Ноутбуки</option>
+                <option value="accessories">Аксессуары</option>
+            </select>
+
+            <select id="sort_filter" aria-label="Сортировка">
+                <option value="default">Сначала популярные</option>
+                <option value="price-asc">Сначала дешевле</option>
+                <option value="price-desc">Сначала дороже</option>
+                <option value="name">По названию</option>
+            </select>
+        </section>
+
+        <div class="catalog-results">
+            <p id="products_count">Товары</p>
+            <a href="cart.html" class="cart-link">
+                Корзина <span id="cart_count">0</span>
+            </a>
+        </div>
+
+        <!-- Сюда JavaScript добавит карточки -->
+        <section id="products_grid" class="products-grid"></section>
+
+        <p id="empty_message" class="empty-message hidden">
+            Ничего не найдено. Попробуй изменить поиск или фильтры.
+        </p>
+    </main>
+    <script src="/js/header.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/catalog.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

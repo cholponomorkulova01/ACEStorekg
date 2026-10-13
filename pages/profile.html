@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Мой профиль</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <div id="header"></div>
+
+    <main class="profile-page">
+        <div class="profile-wrapper">
+
+            <!-- Заголовок -->
+            <div class="profile-heading">
+                <span class="profile-label">ACE STORE / ACCOUNT</span>
+                <h1>Мой профиль</h1>
+                <p>Управляй своим аккаунтом и покупками.</p>
+            </div>
+
+            <!-- Карточка профиля -->
+            <section class="profile-card">
+
+                <div class="profile-top">
+                    <div class="profile-avatar" id="profile_avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="profile-user">
+                        <span class="profile-status">
+                            <span class="status-dot"></span>
+                            Аккаунт активен
+                        </span>
+
+                        <h2 id="profile_name">Пользователь</h2>
+                        <p id="profile_email">email@example.com</p>
+                    </div>
+                </div>
+
+                <div class="profile-divider"></div>
+
+                <!-- Информация -->
+                <div class="profile-info">
+                    <h3>Информация об аккаунте</h3>
+
+                    <div class="profile-info-row">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div class="info-content">
+                            <span>Имя пользователя</span>
+                            <strong id="profile_name_info">Пользователь</strong>
+                        </div>
+                    </div>
+
+                    <div class="profile-info-row">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="info-content">
+                            <span>Электронная почта</span>
+                            <strong id="profile_email_info">
+                                Не указана
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-divider"></div>
+
+                <!-- Действия -->
+                <div class="profile-actions">
+                    <a href="/pages/orders.html" class="profile-action">
+                        <div class="action-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+
+                        <div class="action-text">
+                            <strong>Мои заказы</strong>
+                            <span>История покупок</span>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right action-arrow"></i>
+                    </a>
+
+                    <a href="/pages/catalog.html" class="profile-action">
+                        <div class="action-icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+
+                        <div class="action-text">
+                            <strong>Каталог товаров</strong>
+                            <span>Выбрать технику</span>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right action-arrow"></i>
+                    </a>
+                </div>
+
+                <button class="logout-button" id="logout" type="button">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    Выйти из аккаунта
+                </button>
+
+                <p class="profile-footer">
+                    ACE STORE — технологии для твоей жизни.
+                </p>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="home-footer">
+        <a href="home.html" class="footer-brand">
+            ACE<span>STORE</span>
+        </a>
+        <p>2026 Все права защищены</p>
+        <a href="about.html">О нас</a>
+    </footer>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/profile.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</body>
+</html>

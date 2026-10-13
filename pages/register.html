@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+   <section class="container">
+         <div class="container_auth">
+            <div id="auth">
+                <h1 id="auth_title">Регистрация</h1>
+                <p id="auth_subtitle">Заполни данные для регистрации</p>
+
+                <div class="tabs">
+                    <button id="register_tab" class="active">Регистрация</button>
+                    <button id="login_tab">Вход</button>
+                </div>
+
+                <form action="#" id="register_form">
+                    <input type="text" name="text" id="reg_name" placeholder="Ваше имя" minlength="6" maxlength="50" autocomplete="name" required>
+                    <input type="email" name="email" id="reg_email" placeholder="Email" autocomplete="email" required>
+                    <input type="password" name="password" id="reg_pass" placeholder="Пароль" minlength="6" autocomplete="new-password" required>
+                    <div id="confirm_field" class="field">
+                        <label for="confirm_pass"></label>
+                        <input type="password" name="confirm_pass" id="reg_confirm_pass" placeholder="Повторите пароль" minlength="5" autocomplete="new-password" required>
+                    </div>
+
+                    <button class="submit" type="submit" id="submit_btn">Создать аккаунт</button>
+                </form>
+
+                <form action="#" id="login_form" class="hidden">
+                    <input type="email" name="email" id="login_email" placeholder="Email" autocomplete="email" required>
+                    <input type="password" name="password" id="login_pass" placeholder="Пароль" minlength="6" autocomplete="current-password" required>
+
+                    <p id="login_text">Уже есть аккаунт?</p>
+                    <button class="submit" type="submit" id="login_btn">Войти</button>
+                </form>
+
+                <p id="message" role="status" aria-live="polite"></p>
+            </div>
+        </div>
+   </section>
+
+    <footer class="home-footer">
+        <a href="home.html" class="footer-brand">
+            ACE<span>STORE</span>
+        </a>
+        <p>2026 Все права защищены</p>
+        <a href="about.html">О нас</a>
+    </footer>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

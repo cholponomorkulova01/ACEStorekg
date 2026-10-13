@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="cart-page">
+        <h1>Моя корзина</h1>
+        <p id="cart_empty" class="empty-message hidden">
+            Корзина пока пуста.
+            <a href="catalog.html">Перейти в каталог</a>
+        </p>
+
+        <section id="cart_items" class="cart-items"></section>
+
+        <section id="cart_summary" class="cart-summary">
+            <p>Итого:</p>
+            <p id="cart_total" class="cart-total">0 сом</p>
+            <button id="clear_cart" class="cart-clear-button" type="button">
+                Очистить корзину
+            </button>
+        </section>
+
+        
+        <section class="telegram-order">
+            <h2>Оформление заказа</h2>
+            <p>Оставь контактные данные — мы свяжемся с тобой.</p>
+
+            <form id="order_form">
+                <label for="order_name">Имя</label>
+                <input
+                    id="order_name"
+                    name="name"
+                    type="text"
+                    maxlength="100"
+                    placeholder="Как тебя зовут?"
+                    required
+                >
+
+                <label for="order_phone">Телефон</label>
+                <input
+                    id="order_phone"
+                    name="phone"
+                    type="tel"
+                    maxlength="40"
+                    placeholder="+996 ..."
+                    required
+                >
+
+                <label for="order_address">Адрес доставки</label>
+                <textarea
+                    id="order_address"
+                    name="address"
+                    maxlength="300"
+                    placeholder="Город, улица, дом"
+                    required
+                ></textarea>
+
+                <button type="submit" id="order_submit">
+                    Заказать
+                </button>
+
+                <p id="order_status" role="status"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/tg-order.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

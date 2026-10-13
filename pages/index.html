@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE STORE — Техника нового поколения</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="home-body">
+
+    <div id="header"></div>
+
+    <main class="home-page">
+        <section class="home-hero">
+            <div class="hero-content">
+                <p class="hero-label">
+                    <span class="hero-label-dot"></span>
+                    ТЕХНОЛОГИИ НОВОГО ПОКОЛЕНИЯ
+                </p>
+
+                <h1>
+                    Больше возможностей.
+                    <span>Меньше ограничений.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Открой для себя технику, которая меняет
+                    привычный взгляд на каждый день.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="catalog.html" class="hero-button">
+                        Смотреть каталог
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="#popular" class="hero-secondary-link">
+                        Популярные товары
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="hero-note-line"></span>
+                    <span>ТВОЙ МИР. ТВОИ ТЕХНОЛОГИИ.</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-glow"></div>
+
+                <div class="hero-image-frame">
+                    <img
+                        id="hero_product_image"
+                        src="/img/photo_5366120251612929662_y.jpg"
+                        alt="Современный смартфон"
+                    >
+                </div>
+
+                <div class="hero-floating-card">
+                    <span class="floating-card-label">ВЫБОР НЕДЕЛИ</span>
+                    <strong id="hero_product_name">iPhone 18 Pro Max 256гб</strong>
+                    <span id="hero_product_price">140 590 сом</span>
+                </div>
+
+                <div class="hero-decoration">ACE<br>STORE</div>
+            </div>
+
+            <div class="hero-index">01 / ACE STORE</div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="home-benefits">
+            <article class="benefit-item">
+                <span class="benefit-icon">↗</span>
+                <div>
+                    <h2>Современные технологии</h2>
+                    <p>Гаджеты для работы, учёбы и отдыха</p>
+                </div>
+            </article>
+
+            <article class="benefit-item">
+                <span class="benefit-icon">◇</span>
+                <div>
+                    <h2>Выбор для каждого</h2>
+                    <p>Подбери технику под свои задачи</p>
+                </div>
+            </article>
+
+            <article class="benefit-item">
+                <span class="benefit-icon">✓</span>
+                <div>
+                    <h2>Удобный поиск</h2>
+                    <p>Находи нужные товары в каталоге</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Категории -->
+        <section class="home-categories">
+            <div class="home-section-heading">
+                <div>
+                    <p class="home-eyebrow">ИССЛЕДУЙ ВОЗМОЖНОСТИ</p>
+                    <h2>Что ты ищешь?</h2>
+                </div>
+
+                <a href="catalog.html" class="home-text-link">
+                    Все товары <span>→</span>
+                </a>
+            </div>
+
+            <div class="category-tiles">
+                <a href="catalog.html?category=phones"
+                   class="category-tile category-tile-phone">
+                   <img class="category-tile-image" src="/img/photo_5366120251612929661_x.jpg" alt="Смартфоны">
+                    <span class="category-number">01</span>
+                    <div>
+                        <h3>iPhone</h3>
+                        <p>Технологии всегда с тобой</p>
+                    </div>
+                    <span class="category-arrow">↗</span>
+                </a>
+
+                <a href="catalog.html?category=audio"
+                   class="category-tile category-tile-audio">
+                   <img class="category-tile-image" src="/img/photo_5366120251612929663_x.jpg" alt="Смартфоны">
+                    <span class="category-number">02</span>
+                    <div>
+                        <h3>AirPods</h3>
+                        <p>Слушай больше</p>
+                    </div>
+                    <span class="category-arrow">↗</span>
+                </a>
+
+                <a href="catalog.html?category=computers"
+                   class="category-tile category-tile-computers">
+                   <img class="category-tile-image" src="/img/photo_5366120251612929660_x.jpg" alt="Смартфоны">
+                    <span class="category-number">03</span>
+                    <div>
+                        <h3>Samsung Galaxy S26 Ultra</h3>
+                        <p>Твои идеи без границ</p>
+                    </div>
+                    <span class="category-arrow">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Популярные товары -->
+        <section class="home-popular" id="popular">
+            <div class="home-section-heading">
+                <div>
+                    <p class="home-eyebrow">ВЫБОР ПОКУПАТЕЛЕЙ</p>
+                    <h2>Популярные товары<span class="blue-period">.</span></h2>
+                </div>
+
+                <a href="catalog.html" class="home-text-link">
+                    В каталог <span>→</span>
+                </a>
+            </div>
+
+            <div id="home_products" class="home-products-grid"></div>
+        </section>
+
+        <!-- Нижний рекламный баннер -->
+        <section class="home-bottom-banner">
+            <div>
+                <p class="home-eyebrow">ТВОЁ СЛЕДУЮЩЕЕ ОБНОВЛЕНИЕ</p>
+                <h2>Найди то, что подходит именно тебе.</h2>
+                <p>Изучай ассортимент и выбирай технику под свои цели.</p>
+            </div>
+
+            <a href="catalog.html" class="hero-button">
+                Перейти в каталог <span>↗</span>
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="home-footer">
+        <a href="home.html" class="footer-brand">
+            ACE<span>STORE</span>
+        </a>
+        <p>2026 Все права защищены</p>
+        <a href="about.html">О нас</a>
+    </footer>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="/js/home.js"></script>
+
+</body>
+</html>
